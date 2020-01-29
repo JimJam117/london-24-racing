@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <!--META TAGS-->
+        <meta charset="UTF-8">
+        <meta name="description" content="London Powerboat Race Team">
+        <meta name="keywords" content="Powerboat, London, Astra, 24, Racing">
+        <meta name="author" content="Astra London, James Sparrow">
+        <meta id="meme" name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!--LINKS AND TITLE-->
+        <title>London Racing</title>
+        <link rel="shortcut icon" type="image/x-icon" href="24.ico" />
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!--SCRIPTS-->
+        <script src="https://use.fontawesome.com/1c9721711e.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {
+                    e.preventDefault();
+
+                    var target = this.hash;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+            });
+
+        </script>
+        <script>
+            const mq = window.matchMedia( "(min-width: 600px)" );
+
+            $(document).ready(checkHeight);
+            $(window).resize(checkHeight);
+
+            function  checkHeight() {
+                if (mq.matches) {
+                    $(".small-gallary").css("height", $(".Racing-Section").height());
+                } else {
+                    $(".small-gallary").css("height", "400px");
+                }
+            }
+
+
+
+
+        </script> <!-- Resize window script for small gallery -->
+        <script>
+
+            function emailShow() {
+                document.getElementById("email-tooltip").style.opacity = "1";
+            }
+
+            function emailHide() {
+                document.getElementById("email-tooltip").style.opacity = "0";
+            }
+        </script>
+
+
+    </head>
+
+
+<body>
+
+
+    <!--Top Bar-->
+    <div class="topBar">
+        <span class="title2">LONDON 24 RACING</span>
+        <div class="animated fadeInDown text-bar">
+            <span class="title">LONDON 24 RACING</span>
+            <a href="/blog.php" class="top-link">Blog</a>
+            <a href="#About" class="top-link">Who We Are</a>
+            <a href="#Boat" class="top-link">The Boat</a>
+            <a href="#Racing" class="top-link">Racing</a>
+            <a href="#Photos" class="top-link">Photography</a>
+            <a href="#Videos" class="top-link">Videography</a>
+            <a href="#Contact" class="top-link">Contact</a>
+        </div>
+    </div>
+
+
+    <!--Social Links-->
+    <div class="social-links animated fadeInLeft">
+
+        <button onclick="location.href='https://www.facebook.com/profile.php?id=100006658575535';"
+                class="facebook social-button">
+            <i class="fa fa-facebook-f fa-2x"></i>
+            <a href="https://www.facebook.com/profile.php?id=100006658575535" class="tooltiptext">Contact me on Facebook</a></button>
+
+        <button class="email social-button">
+            <i class="fa fa-envelope fa-2x"></i>
+            <span class="tooltiptext">astra.london24@gmail.com</span></button>
+
+        <button onclick="location.href='https://www.youtube.com/channel/UCbdzfMO-OZUP8WcoQQk5JXA';"
+                class="youtube social-button">
+            <i class="fa fa-youtube fa-2x"></i>
+            <a href="https://www.youtube.com/channel/UCbdzfMO-OZUP8WcoQQk5JXA" class="tooltiptext">Check out my Youtube Channel</a></button>
+
+
+
+    </div>
+
+
+
+    <!--Start Page-->
+    <div id="Home" class="pimg1 parallax">
+
+
+
+        <div class="ptext ptext-top animated zoomIn">
+            <span class="border">
+                Welcome
+            </span>
+        </div>
+    </div>
+
+
+    <!--FIRST SECTION-->
+
+    <section id="About" class="section section-dark">
+        <div class="section-text text-2 left">
+            <p>Hello. My name is Astra London and I am driver for London Race Team, a team consisting of myself and my dad, Russ London.  We have been racing for 3 years.</p> <p>The first two years were spent in GT15 but we now race in GT30. We are based at Stewartby Water Sports Club.</p></div>
+
+        <img src="images/astra.jpg" class="right" style="border-radius: 20px;">
+    </section>
+
+
+
+    <div class="pimg2 pimg-size parallax">
+
+        <div class="ptext animated zoomIn">
+            <span class="border">
+                The Boat
+            </span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--SECOND SECTION-->
+    <section id="Boat" class="section section-light">
+        <img src="images/boat3.jpg" class="left" style="border-radius: 20px;">
+        <div class="section-text text-1 right">
+
+            <p>Our boat is a GT30 with a bright orange hull. It was painted this colour by Bexley Nunn, the previous owner and we didn’t want to change it. The hull was built in 2012 and has changed hands many times over the years, belonging to Harvey Smith, Thomas Mantripp and Bexley Nunn at different points. </p> <p> When we started racing in GT30 we decided to keep the hull and change the engine, meaning it has been ours for 3 years. We have named her Glow On.</p></div>
+
+
+    </section>
+
+
+
+
+
+
+    <div class="pimg3 pimg-size parallax">
+
+        <div class="ptext animated zoomIn">
+            <span class="border">
+                Racing
+            </span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--SECTION THREE-->
+    <!--RACING-->
+    <section id="Racing" class="section section-dark">
+
+        <!--IMAGES-->
+        <div class="left">
+            <div style="height: 300px;" class="small-gallary">
+                <div class="gallery-child">
+                    <img class="top-left-pic child-img" src="images/clash.jpg">
+                    <img class="top-right-pic child-img" src="images/win1.jpg">
+                    <img class="bottom-left-pic child-img" src="images/otherboat.jpg">
+                    <img class="bottom-right-pic child-img" src="images/boat4.jpg">
+                </div>
+            </div>
+        </div>
+
+            <!--TEXT-->
+        <div  class="section-text text-1 Racing-Section right">
+            <p>Beginning in the 2015 season, my time in GT15 was rocky. As a new, inexperienced driver in a hull that was rather heavy, I struggled to keep up in races. Over the course of two years, my dad (Russ London) worked exceptionally hard to take weight off and through practise I gradually became a more skilled driver. </p><p>By the end of GT15, we had achieved a 3rd place at the 2016 Stewartby Sprint Championship. We also took part in the 2016 European championships at Stewartby where we finished second to last (which was an achievement for us)
+                We look forward to more time in GT30.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="pimg4 pimg-size  parallax">
+
+        <div class="ptext animated zoomIn">
+            <span class="border">
+                Photography
+            </span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--GALLERY-->
+    <section id="Photos" class="section section-light">
+
+        <div class="section-text text-2 left">
+
+
+            <p>At the 2017 international meet at Stewartby I was unable to compete however I volunteered to go on a tow boat where I met Stuart. He kindly loaned me his camera for the weekend and I had great fun passing the hours taking pictures.</p> <p>On the right are some of the photos I took and I may upload more in the future. I also enjoy drawing and painting boats and intend to post some of these as well.
+            </p></div>
+
+
+        <div class="right">
+        <div class="gallery cf">
+            <div>
+                <img src="images/Cropped/1.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/2.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/3.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/4.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/5.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/6.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/7.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/8.jpg" />
+            </div>
+            <div>
+                <img src="images/Cropped/9.jpg" />
+            </div>
+        </div>
+            <div class="gallary-clear"></div>
+        </div>
+    </section>
+
+
+
+
+    <div class="pimg5 pimg-size  parallax">
+
+        <div class="ptext animated zoomIn">
+            <span class="border">
+                Videography
+            </span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <section id="Videos" class="section3 section-dark">
+        <div class="section-text">
+            <p>I enjoy editing videos and in late 2017, I finished my documentary. This was a year-long project (including research, brainstorming ect) which I completed for my EPQ at college. The documentary details different aspects Stewartby club including history, boat classes and events. You can find it below or on my YouTube channel, where I have posted other video projects.</p></div>
+        <br>
+        <div class="inlineGallary">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwf9-buHHTg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+
+
+
+    <div id="Contact" class="pimgfinal parallax">
+
+        <div class="topFooter-mobile">
+
+            <br><br><hr><br><br>
+            <span style="position: relative; top: 50%">Contact us below!</span><br><br><hr>
+            <div class="bottom-social">
+
+            <button onclick="location.href='https://www.facebook.com/profile.php?id=100006658575535';"
+                    class="facebook social-button-mobile">
+                <i class="fa fa-facebook-f fa-2x"></i></button>
+
+            <button onmouseover="emailShow()" onmouseleave="emailHide()" class="email email-mobile social-button-mobile">
+                <i class="fa fa-envelope fa-2x"></i>
+                </button>
+
+
+                <button  onclick="location.href='https://www.youtube.com/channel/UCbdzfMO-OZUP8WcoQQk5JXA';"
+                        class="youtube social-button-mobile">
+                    <i class="fa fa-youtube fa-2x"></i></button>
+                    <br>
+
+
+            </div>
+            <span id="email-tooltip" class="tooltiptext-mobile">astra.london24@gmail.com</span>
+            <span style="font-size: 20px; line-height: 30px"><hr>Website designed by James Sparrow (jamessparrow101@gmail.com)<hr><br> Some photographs were taken by professional photographers including:<br> Brain Scott (Official photographer for powerboat GP)<br> <a style="color: white" href="https://bryanscott-photography.com/">https://bryanscott-photography.com/</a> <br><br> Phil Lagden<br><br> Fred Emeny<hr></span>
+
+        </div>
+
+
+        <div class="ptext topFooter">
+            <span class="border">
+                <i class="fa fa-arrow-left"></i> Contact us over here!
+            </span>
+        </div>
+
+
+
+        <div class="ptext bottomFooter">
+            <div class="border">
+                Website designed by James Sparrow (jamessparrow101@gmail.com). Some photographs were taken by professional photographers including:  <a style="color: white" href="https://bryanscott-photography.com/">Brain Scott (Official photographer for powerboat GP)</a>, Phil Lagden, Fred Emeny.
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

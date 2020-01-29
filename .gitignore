@@ -1,0 +1,5 @@
+/includes/config.php
+.well-known/
+/blog
+.htaccess
+error_log
